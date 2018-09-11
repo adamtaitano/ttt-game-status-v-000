@@ -38,13 +38,7 @@ def won?(board)
 end
 
 def full?(board)
-  if !over?(board)
-    false
-  end
-  
-  board.all? do |cell|
-    cell == "X" || "O"
-  end
+  board.all?{|token| token == "X" || token == "O"}
 end
 
 def draw?(board)
