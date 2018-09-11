@@ -33,14 +33,8 @@ def won?(board)
 end
 
 def full?(board)
-  full_bard = board.all? do |cell|
+  board.all? do |cell|
     cell == "X" || "O"
-  end
-  
-  if full_board
-    true
-  else
-    false
   end
 end
 
