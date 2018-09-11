@@ -31,3 +31,7 @@ def full?(board)
     cell == "X" || "O"
   end
 end
+
+def draw?(board)
+  full?(board) && !won?(board)
+end
