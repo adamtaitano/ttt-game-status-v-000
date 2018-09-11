@@ -25,7 +25,7 @@ def won?(board)
       winner_token = "O"
       return win_combination
     else
-      nil
+      false
     end
   end
 end
