@@ -10,7 +10,7 @@ winner_token = nil
 
 def won?(board)
   #return true if none of the cells are position_taken
-  board.none? do |cell|
+  board.all? do |cell|
     position_taken?(board, cell)
   end
   WIN_COMBINATIONS.each do |win_combination| 
