@@ -27,7 +27,7 @@ def won?(board)
 end
 
 def full?(board)
-  all_full = board.all? do |cell|
-    
+  board.all? do |cell|
+    cell == "X" || "O"
   end
 end
