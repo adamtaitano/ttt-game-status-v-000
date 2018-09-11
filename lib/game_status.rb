@@ -9,19 +9,6 @@ WIN_COMBINATIONS = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4
 winner_token = nil
 
 def won?(board)
-  #return true if none of the cells return true for position_taken?
-  board_empty = board.none? do |cell|
-    position_taken?(board, cell)
-  end
-  
-  if(board_empty)
-    false
-  end
-  # draw = draw?(board)
-
-  # if (board_empty || draw)
-  #   false
-  #end
   
   WIN_COMBINATIONS.each do |win_combination| 
     win_index_1 = win_combination[0]
